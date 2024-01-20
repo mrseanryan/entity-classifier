@@ -1,0 +1,15 @@
+# === Animals ===
+Aardvark
+Albatross
+Alligator
+Alpaca
+Anaconda
+Ant
+Zebu
+# === Countries ===
+Albania
+Andorra
+Angola
+Austria
+Bangladesh
+Belgium
