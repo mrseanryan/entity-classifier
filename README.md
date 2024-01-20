@@ -1,11 +1,12 @@
 # entity-classifier
-Classify entities into clusters via embedding vectors, using a given list of category names.
+Classify entities into clusters via a zero-shot approach using embedding vectors, using a given list of category names.
 
-- use embedding to make vectors of entity names
-- then cluster against a list of words/categories
-- then can classify for presentation in logical groups
+- use an embedding to make vectors of entity names
+- use the same embedding to make vectors of category names
+- for each embedding, find the category that has a nearest vector
+- then can classify the entities, for presentation in logical groups
 
-## Apprroach
+## Approach
 
 Compare words (labels) by examining how close are their encoded vectors:
 
@@ -78,9 +79,11 @@ Increase accuracy:
 - take several embeddings per class and use their average for that class
 - try different embeddings, can get better results
 - try different distance measures from your library
-- consider tuning the embedding
+- consider tuning the embedding (for example, for the domain vocabulary of a particular industry or problem space)
 
 # References
+
+[My Medium article](https://medium.com/@mr.sean.ryan/classify-entities-via-a-zero-shot-approach-using-embedding-encodings-7ee9ee6e6bf2)
 
 [Conference notes from ML Con Berlin 2023](https://github.com/mrseanryan/dev-conferences/blob/master/2023/mlcon-berlin/talk-Embeddings-Intro.md/README.md)
 
