@@ -60,9 +60,9 @@ OUTPUT:
 CATEGORY: (unknown)
   entity ['Aardvark', 'Alpaca', 'Anaconda']
 CATEGORY: animal
-  entity ['Albatross', 'Ant', 'Zebu']
+  entity ['Albatross', 'Alligator', 'Ant', 'Zebu']
 CATEGORY: country
-  entity ['Alligator', 'Albania', 'Andorra', 'Angola', 'Austria', 'Bangladesh', 'Belgium']
+  entity ['Albania', 'Andorra', 'Angola', 'Austria', 'Bangladesh', 'Belgium']
 ```
 
 The results are not perfect, but not bad considering this is a simple 'out of the box' solution.

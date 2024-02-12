@@ -17,7 +17,7 @@ def _find_closest_category(entity_encoding, category_to_encoding, threshold):
     best_category = "(unknown)"
     best_match = 1
     for category in category_to_encoding:
-        cos_sim = util.cos_sim(entity_encoding, category_to_encoding[category])
+        cos_sim = 1 - util.cos_sim(entity_encoding, category_to_encoding[category])
         if cos_sim < threshold and cos_sim < best_match:
             best_category = category
             best_match = cos_sim
